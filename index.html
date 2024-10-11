@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Форма ввода расходов</title>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div>
+            <h1>Введите расходы</h1>
+            <form id="expenseForm">
+                <label for="date">Дата:</label>
+                <input type="date" id="date" required>
+
+                <label for="amount">Сумма:</label>
+                <input type="number" id="amount" required>
+
+                <label for="category">Категория:</label>
+                <select id="category" required>
+                    <option value="">Выберите категорию</option>
+                    <option value="Еда">Еда</option>
+                    <option value="Транспорт">Транспорт</option>
+                    <option value="Развлечения">Развлечения</option>
+                </select>
+
+                <label for="comment">Комментарий:</label>
+                <input type="text" id="comment">
+
+                <button type="submit">Сохранить</button>
+            </form>
+        </div>
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Дата</th>
+                        <th scope="col">Сумма</th>
+                        <th scope="col">Категория</th>
+                        <th scope="col">Комментарий</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
